@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "createdAt": "2026-10-28T14:03:38.9841295+08:00",
+  "purpose": "Claude 雲端藍圖討論，公開設計資料包",
+  "publicRepository": "9gf6p4448m-del/board-proto-s0",
+  "publicPath": "design-context",
+  "mainInventoryCommit": "680e8f3",
+  "liveBuildSource": "e1f1b8279ea46114cf487fea6f9b65314b73f08a",
+  "liveDeployment": "ce842abd43e37991a28832136995b6ddffa10e6d",
+  "commanderV2Engine": "b9c7f22b0d8fe259629ae0d0ee69cc63ea3490d8",
+  "status": "v090 live; commander v2 UCT complete, AB still running; new statistics/V9 not executed; no v2 final judgment",
+  "files": [
+    {
+      "path": "01-CURRENT-GAME.md",
+      "bytes": 3729,
+      "sha256": "6f20b662379032c09f3d3392453aacf309340cf3d3a5e7cd075365e8d3f63590",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "02-BLUEPRINT-NEXT.md",
+      "bytes": 4653,
+      "sha256": "95ba490c6b7fd038f809cc208895f0de96081d2dee081620c0acac5235a80398",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "03-TECHNICAL-MAP.md",
+      "bytes": 2992,
+      "sha256": "3e467b628e1524887da1014815d4173884da0ba44165ef06e71ff2ad99ff2868",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "04-VISUAL-RESEARCH.md",
+      "bytes": 3041,
+      "sha256": "9aed01b5f3bdf5f6e67d137425aa2c85a2e6f8019abdcdfeefc962ac4b500d4e",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "05-FOR-CLAUDE.md",
+      "bytes": 1972,
+      "sha256": "c39389198980b7e77f5454ade3708b15eaa1bc0053c2cdefefd92b6405ca58b8",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2816,
+      "sha256": "16f4c1fa5d273fa9c1227c7e018996f00fe34bfbaa13d869c0d571c4b18fada5",
+      "source": "authored summary; see document source notes"
+    },
+    {
+      "path": "references/acceptance-jieshi-commander-sim-r2.md",
+      "bytes": 6989,
+      "sha256": "b21b3eb3177e5d6ea006ab601d69258f71a737a3e8cc0c342feeb3f2f13142d7",
+      "source": "docs/acceptance-frozen/acceptance-jieshi-commander-sim-r2.md"
+    },
+    {
+      "path": "references/acceptance-jieshi-commander-sim.md",
+      "bytes": 8779,
+      "sha256": "5bd8b3d3082a9cab064b75b1e7dc58e0c82d910d7c0700ae62b6c033b72f8f0d",
+      "source": "docs/acceptance-frozen/acceptance-jieshi-commander-sim.md"
+    },
+    {
+      "path": "references/RULES_CAPTURE.md",
+      "bytes": 2489,
+      "sha256": "423b851dae51bf19c9531c0d649779b08a85e2d2460f55bee8bce9f74d721f2f",
+      "source": "docs/RULES_CAPTURE.md"
+    },
+    {
+      "path": "references/RULES_COMMANDER.md",
+      "bytes": 10277,
+      "sha256": "efe9e5fd147aefe249dcfc015de59f2a24d010043c613b8d29b8709c88b71e93",
+      "source": "docs/RULES_COMMANDER.md"
+    },
+    {
+      "path": "references/RULES_DRAW.md",
+      "bytes": 2020,
+      "sha256": "75d60d7051968619f685e5386b1229f322bb4f3c6309d8e51b431b2592e67072",
+      "source": "docs/RULES_DRAW.md"
+    },
+    {
+      "path": "references/RULES_G1.md",
+      "bytes": 5353,
+      "sha256": "8cc3e0bbf1ed6efa89b6a31bdd3851918f2b571642f92245632daed8fc3a5a55",
+      "source": "docs/RULES_G1.md"
+    },
+    {
+      "path": "references/RULES_G2.md",
+      "bytes": 4511,
+      "sha256": "c039be71407464743eaa93629dbeeaa6f1806a8cb5448d6cc06a1e902b7cc648",
+      "source": "docs/RULES_G2.md"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "source": "preserve exact published bytes and reference-file line endings"
+    }
+  ]
+}
