@@ -1,0 +1,16 @@
+{
+  "name": "憑弈：羅生門",
+  "short_name": "憑弈",
+  "description": "羅生門下，借勢對弈。步步為封，直取敵主。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0e15",
+  "theme_color": "#0b0e15",
+  "lang": "zh-Hant",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
