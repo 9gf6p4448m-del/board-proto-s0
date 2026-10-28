@@ -8,8 +8,14 @@
   "liveBuildSource": "e1f1b8279ea46114cf487fea6f9b65314b73f08a",
   "liveDeployment": "ce842abd43e37991a28832136995b6ddffa10e6d",
   "commanderV2Engine": "b9c7f22b0d8fe259629ae0d0ee69cc63ea3490d8",
-  "status": "v090 live; commander v2 UCT complete, AB still running; new statistics/V9 not executed; no v2 final judgment",
+  "status": "v090 live unchanged; v2 full50/2480, independent C3 zero differences, V9 all120 completed; formal r2 timed out without verdict, no PASS; C10/final judgment pending Claude",
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "source": "preserve exact published bytes and reference-file line endings"
+    },
     {
       "path": "01-CURRENT-GAME.md",
       "bytes": 3729,
@@ -18,8 +24,8 @@
     },
     {
       "path": "02-BLUEPRINT-NEXT.md",
-      "bytes": 4653,
-      "sha256": "95ba490c6b7fd038f809cc208895f0de96081d2dee081620c0acac5235a80398",
+      "bytes": 4828,
+      "sha256": "51a4e9ef5365da9c9d32f730b52966981f7ca4de5194d7ffb765aa134594c040",
       "source": "authored summary; see document source notes"
     },
     {
@@ -36,14 +42,20 @@
     },
     {
       "path": "05-FOR-CLAUDE.md",
-      "bytes": 1972,
-      "sha256": "c39389198980b7e77f5454ade3708b15eaa1bc0053c2cdefefd92b6405ca58b8",
+      "bytes": 2093,
+      "sha256": "77da8a44b778313e68b4a6dc1464cda7ad18b6278d69c799274c2e245d2ca5fd",
       "source": "authored summary; see document source notes"
     },
     {
+      "path": "LATEST_STATUS.md",
+      "bytes": 2901,
+      "sha256": "23e7778b61873e2a99c40cf646c5aa811a566d4e6f8897922a6c13ba0412888c",
+      "source": "progress summary from main@19f84e4; no original source code or private execution logs"
+    },
+    {
       "path": "README.md",
-      "bytes": 2816,
-      "sha256": "16f4c1fa5d273fa9c1227c7e018996f00fe34bfbaa13d869c0d571c4b18fada5",
+      "bytes": 2972,
+      "sha256": "1037ffb7f278432e6630b826ff3192422a3b051a8f755bd889058c96c057460f",
       "source": "authored summary; see document source notes"
     },
     {
@@ -87,12 +99,8 @@
       "bytes": 4511,
       "sha256": "c039be71407464743eaa93629dbeeaa6f1806a8cb5448d6cc06a1e902b7cc648",
       "source": "docs/RULES_G2.md"
-    },
-    {
-      "path": ".gitattributes",
-      "bytes": 8,
-      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-      "source": "preserve exact published bytes and reference-file line endings"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-28T15:19:47.3212746+08:00",
+  "progressSourceCommit": "19f84e4df59a9904b0e0827a7902f06c4175aef4"
 }
