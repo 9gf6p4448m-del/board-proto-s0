@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>glprobe：WebGL P1 量測頁</title>
+<style>html,body{color:#e8dcc4;background:#1b1712;height:100%;margin:0;padding:0;font:12px/1.35 -apple-system,PingFang TC,Noto Sans TC,sans-serif;overflow:hidden}#stage{width:100vw;height:100vh;position:relative;overflow:hidden}.host{width:0;height:0;position:absolute;top:0;left:0}.fake{box-sizing:border-box;z-index:1;-webkit-user-select:none;user-select:none;border-radius:6px;align-items:center;padding:0 8px;font-size:12px;display:flex;position:absolute}.plate{color:#f0dfb8;background:#2a2017;border:1px solid #b9924a}.fbtn{color:#f3e6c8;background:#3b2e22;border:1px solid #c9a55a;justify-content:center}#hud{color:#e9dcc0;white-space:nowrap;z-index:2;width:322px;height:90px;font:9.5px/11px ui-monospace,Menlo,monospace;position:absolute;top:8px;left:8px;overflow:hidden}#hud b{color:#ffd98a;font-weight:600}#tapLayer{z-index:3;pointer-events:none;position:absolute}#tapMark{box-sizing:border-box;z-index:4;pointer-events:none;border:2px solid #ff5a3c;border-radius:50%;width:20px;height:20px;display:none;position:absolute}#dock{z-index:2;flex-wrap:wrap;gap:6px;width:235px;display:flex;position:absolute;top:596px;left:150px}#dock button,#panel button{color:#f3e6c8;background:#3b2e22;border:1px solid #8d7140;border-radius:6px;padding:5px 8px;font-size:12px}#panel button.on{background:#6b4f22;border-color:#ffd98a}#panel{z-index:30;background:#14100cf5;border-top:1px solid #8d7140;max-height:62vh;padding:8px 10px 24px;position:fixed;bottom:0;left:0;right:0;overflow:auto}#panel .row{flex-wrap:wrap;align-items:center;gap:5px;margin:4px 0;display:flex}#panel .lab{color:#b9a77e;min-width:64px}#panel textarea{color:#e8dcc4;background:#120e0a;border:1px solid #5a4630;width:100%;height:70px;font-size:10px}#panel input[type=text]{color:#e8dcc4;background:#120e0a;border:1px solid #5a4630}.info{color:#c8e0ff;font-size:11px}#card{z-index:10;background:#000;display:none;position:fixed;inset:0;overflow:hidden}body.card-mode #card{display:block}body.card-mode #stage>:not(#cardBar){visibility:hidden}#cardBar{z-index:40;flex-direction:row;gap:8px;display:none;position:fixed;top:calc(50% + 124px);left:50%;transform:translate(-50%)}body.card-mode #cardBar{display:flex}#cardBar button{color:#fff;opacity:.85;background:#333;border:1px solid #888;border-radius:6px;padding:4px 6px;font-size:11px}.cb{box-sizing:border-box;position:absolute}.cb.fine{image-rendering:pixelated}.cb.fid{background:#fff}.cb.fid i{background:#000;width:8px;height:8px;position:absolute;top:4px;left:4px}.cardinfo{color:#888;white-space:nowrap;font-size:11px}</style>
+  <script type="module" crossorigin src="./assets/glprobe-DGNmyaK6.js"></script>
+</head>
+<body>
+<div id="stage">
+  <div id="hostA" class="host"></div>
+  <div id="hostB" class="host"></div>
+  <div id="hud">
+    <div><b id="hRev"></b> <span id="hBuild"></span> <span id="hMode"></span></div>
+    <div id="hRenderer"></div>
+    <div id="hView"></div>
+    <div>rAF p50 <b id="hRafP50">—</b> p95 <b id="hRafP95">—</b> &gt;25ms <b id="hOver25">—</b> 基準 <b id="hHz">—</b>Hz</div>
+    <div>成本 非同步 p50/p95 <b id="hCostA">—</b>　同步 <b id="hCostS">—</b></div>
+    <div id="calibInfo" class="info"></div>
+    <div id="tapInfo" class="info"></div>
+  </div>
+  <div id="fkMenu" class="fake fbtn" data-fake="menu">≡</div>
+  <div id="fkTop" class="fake plate" data-fake="cmdp1">朱方・名牌</div>
+  <div id="fkBot" class="fake plate" data-fake="cmdp0">藍方・名牌</div>
+  <div id="fkUndo" class="fake fbtn" data-fake="undo">悔棋</div>
+  <div id="fkHome" class="fake fbtn" data-fake="home">回首頁</div>
+  <div id="tapLayer"></div>
+  <div id="tapMark"></div>
+  <div id="dock">
+    <button data-act="play">播放演出</button>
+    <button data-act="calib">校準</button>
+    <button data-act="auto">自動量測</button>
+    <button data-act="panel">設定</button>
+    <button id="pickBtn">點格</button>
+  </div>
+  <div id="cardBar"><button data-act="cardNext">下一張</button><button data-act="cardAlt">下段備案</button><button data-act="cardExit">離開</button></div>
+</div>
+<div id="card"></div>
+<div id="panel" hidden>
+  <div class="row"><span class="lab">量測條件</span>
+    <label><input type="checkbox" id="c1">低耗電關</label><label><input type="checkbox" id="c2">未接電源</label><label><input type="checkbox" id="c3">電量≥50%</label><label><input type="checkbox" id="c4">已靜置5分鐘</label><label><input type="checkbox" id="c5">只開一個分頁</label></div>
+  <div class="row"><span class="lab">量測</span><button data-act="baseline">基準頻率</button><button data-act="calib">校準 H1</button><button data-act="auto">自動量測 C1～C11</button><button data-act="stress">5 分鐘壓力測試</button><button data-act="syncMode">HUD 同步／非同步</button>
+    <span id="autoInfo" class="info"></span><span id="stressInfo" class="info"></span></div>
+  <div class="row"><span class="lab">體感溫度</span><select id="temp"><option value=""></option><option>冷</option><option>溫</option><option>熱</option><option>燙</option></select></div>
+  <div class="row"><span class="lab">棋盤 DPR</span><button data-set="dpr=1.5">1.5</button><button data-set="dpr=2">2</button><button data-set="dpr=3">3</button>
+    <span class="lab">光 DPR</span><button data-set="overlayDpr=1">1</button><button data-set="overlayDpr=1.5">1.5</button><button data-set="overlayDpr=2">2</button></div>
+  <div class="row"><span class="lab">MSAA</span><button data-set="msaa=true">開</button><button data-set="msaa=false">關</button>
+    <span class="lab">陰影</span><button data-set="shadow=false">關</button><button data-set="shadow=true">開</button>
+    <span class="lab">bloom</span><button data-set="bloom=off">關</button><button data-set="bloom=fake">假</button><button data-set="bloom=true">真</button></div>
+  <div class="row"><span class="lab">D5</span><button data-set="scheme=A">方案 A</button><button data-set="scheme=B">方案 B</button><button data-set="blend=M3">M3</button><button data-set="blend=M1">M1</button></div>
+  <div class="row"><span class="lab">D17</span><button data-set="stackCase=a">(a) 不錯位</button><button data-set="stackCase=b">(b) 階梯</button><button data-set="stackCase=c">(c) 細邊</button></div>
+  <div class="row"><span class="lab">主倍率</span><input type="range" id="mSlider" min="1.08" max="1.20" step="0.01" value="1.14"><span id="mVal"></span>　s_k <span id="skVal"></span></div>
+  <div class="row"><span class="lab">鏡頭</span><button data-set="cam=ortho">正交</button><button data-set="cam=persp">透視</button>
+    仰角 <input type="range" id="elevSlider" min="60" max="90" step="1" value="90"><span id="elevVal"></span>
+    D <input type="range" id="dSlider" min="16" max="45" step="1" value="23"><span id="dVal"></span></div>
+  <div class="row"><span class="lab">示意</span><button data-act="d26" data-val="1">D26 硬洞</button><button data-act="d26" data-val="2">D26 羽化</button><button data-act="d26" data-val="0">關</button><button data-act="card">iOS 測試卡</button></div>
+  <div class="row"><span class="lab">點格</span><button data-act="tapOrtho">正俯視 27 題</button><button data-act="tapOblique">斜視 27 題</button><button data-act="move">搬移測試</button><span id="moveInfo" class="info"></span></div>
+  <div class="row"><span class="lab">選擇</span>D17 <select id="pickCase"><option></option><option>a</option><option>b</option><option>c</option></select>
+    主在疊頂例外版 <select id="pickKingEx"><option></option><option>要</option><option>不要</option></select>
+    D27 <input type="text" id="pickM" size="5"> D26 羽化 <select id="pickD26"><option></option><option>可以</option><option>不行</option></select></div>
+  <div class="row"><span class="lab">備註</span><input type="text" id="noteO2" placeholder="O2 傾斜手感" size="18"><input type="text" id="noteO5" placeholder="O5 溫度" size="10"><input type="text" id="noteO7" placeholder="O7 光 DPR 1.5／2" size="18"></div>
+  <div class="row"><button data-act="copy">一鍵複製</button><button data-act="download">下載 .json</button><span id="copyInfo" class="info"></span></div>
+  <textarea id="jsonBox" readonly></textarea>
+</div>
+</body>
+</html>
