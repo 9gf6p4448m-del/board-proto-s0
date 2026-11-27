@@ -1,0 +1,1494 @@
+{
+ "schema": "ws-assets/1",
+ "tool": "proto/tools/ws/build_assets.py",
+ "dpr": 3,
+ "files": {
+  "plate.webp": {
+   "src": "art/fx-src/whole-screen/sc19-plate-3part.png",
+   "crop": [
+    12,
+    279,
+    1762,
+    580
+   ],
+   "obj_in_crop": [
+    8,
+    8,
+    1742,
+    293
+   ],
+   "k_css_per_src": 0.19838523644752018,
+   "scale": [
+    0.5954285714285714,
+    0.5980066445182725
+   ],
+   "use": "名牌 344×56.540（布陣 160 寬）",
+   "resample": "LANCZOS",
+   "webp_lossless": false,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     347.17416378316034,
+     59.713956170703575
+    ],
+    "obj_offset": [
+     1.5870818915801614,
+     1.5870818915801614
+    ],
+    "obj": [
+     344.0,
+     56.53979238754325
+    ]
+   },
+   "a4": {
+    "semi_px": 13979,
+    "near_white_semi": 3,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 8,
+   "file": "ws/plate.webp",
+   "w": 1042,
+   "h": 180,
+   "bytes": 71696,
+   "sha256": "f8b5dc33ea96ce98ad621d01e1947e5427a19a1c629e7459400050bfbeb5393c"
+  },
+  "tray.webp": {
+   "src": "art/fx-src/whole-screen/sc11-capture-tray.png",
+   "crop": [
+    19,
+    207,
+    1755,
+    691
+   ],
+   "obj_in_crop": [
+    17,
+    8,
+    1719,
+    437
+   ],
+   "k_css_per_src": 0.10928319623971798,
+   "scale": [
+    0.3283410138248848,
+    0.3285123966942149
+   ],
+   "use": "已收服盤 186×46.882",
+   "resample": "LANCZOS",
+   "webp_lossless": false,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     189.71562867215042,
+     52.893066980023505
+    ],
+    "obj_offset": [
+     1.8578143360752057,
+     0.8742655699177438
+    ],
+    "obj": [
+     186.0,
+     46.88249118683901
+    ]
+   },
+   "a4": {
+    "semi_px": 13610,
+    "near_white_semi": 50,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 665,
+   "file": "ws/tray.webp",
+   "w": 570,
+   "h": 159,
+   "bytes": 15416,
+   "sha256": "eb3c3a0b2039334d02ba9384891b82e32d949652374e8b19a002540c5b4726af"
+  },
+  "button.webp": {
+   "src": "art/fx-src/whole-screen/sc09-button.png",
+   "crop": [
+    12,
+    159,
+    2035,
+    589
+   ],
+   "obj_in_crop": [
+    10,
+    6,
+    2014,
+    423
+   ],
+   "k_css_per_src": 0.1247505995203837,
+   "scale": [
+    0.3746910528917449,
+    0.3744186046511628
+   ],
+   "use": "漆面鈕：走這步 250×52.021（悔棋 168×34.958、取消 104×46）",
+   "resample": "LANCZOS",
+   "webp_lossless": false,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     252.37046282973623,
+     53.64275779376499
+    ],
+    "obj_offset": [
+     1.247505995203837,
+     0.7485035971223022
+    ],
+    "obj": [
+     250.00020143884893,
+     52.021
+    ]
+   },
+   "a4": {
+    "semi_px": 7126,
+    "near_white_semi": 0,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 105,
+   "file": "ws/button.webp",
+   "w": 758,
+   "h": 161,
+   "bytes": 33096,
+   "sha256": "27f03337fc2719612147c6d3607bd94d686e1a2265e7b5edcbd05ce15883a250"
+  },
+  "strip.webp": {
+   "src": "art/fx-src/whole-screen/sc10-status-strip.png",
+   "crop": [
+    12,
+    164,
+    2035,
+    578
+   ],
+   "obj_in_crop": [
+    7,
+    7,
+    2016,
+    398
+   ],
+   "k_css_per_src": 0.07466496163682865,
+   "scale": [
+    0.2244191794364805,
+    0.2246376811594203
+   ],
+   "use": "紙籤 高 29.194（寬 150～）",
+   "resample": "BOX",
+   "webp_lossless": true,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     151.04721739130434,
+     30.91129411764706
+    ],
+    "obj_offset": [
+     0.5226547314578005,
+     0.5226547314578005
+    ],
+    "obj": [
+     150.00190792838876,
+     29.194000000000003
+    ]
+   },
+   "a4": {
+    "semi_px": 3577,
+    "near_white_semi": 114,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 1956,
+   "file": "ws/strip.webp",
+   "w": 454,
+   "h": 93,
+   "bytes": 40678,
+   "sha256": "72bbf061d12444d1edb13f46f79fe06eaf2cd78bc553555c1e450c57d26e0689"
+  },
+  "menu.webp": {
+   "src": "art/fx-src/whole-screen/sc14-menu-button.png",
+   "crop": [
+    196,
+    199,
+    1058,
+    1043
+   ],
+   "obj_in_crop": [
+    7,
+    6,
+    855,
+    838
+   ],
+   "k_css_per_src": 0.049528301886792456,
+   "scale": [
+    0.14965197215777262,
+    0.14928909952606634
+   ],
+   "use": "≡ 42×41.208",
+   "resample": "BOX",
+   "webp_lossless": true,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     42.693396226415096,
+     41.801886792452834
+    ],
+    "obj_offset": [
+     0.3466981132075472,
+     0.2971698113207547
+    ],
+    "obj": [
+     42.0,
+     41.20754716981132
+    ]
+   },
+   "a4": {
+    "semi_px": 939,
+    "near_white_semi": 0,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 0,
+   "file": "ws/menu.webp",
+   "w": 129,
+   "h": 126,
+   "bytes": 21038,
+   "sha256": "1f85da2f61c4438d31127d63ee5a37c5c84f2333f82d8aa6ec73b40274170ad8"
+  },
+  "plaque.webp": {
+   "src": "art/fx-src/tech-show/fx16-plaque.png",
+   "crop": [
+    10,
+    195,
+    2164,
+    521
+   ],
+   "obj_in_crop": [
+    6,
+    6,
+    2146,
+    318
+   ],
+   "k_css_per_src": 0.16074766355140188,
+   "scale": [
+    0.48235840297121635,
+    0.48466257668711654
+   ],
+   "use": "方名牌 344×50.153（布陣 160 寬）",
+   "resample": "LANCZOS",
+   "webp_lossless": false,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     346.25046728971967,
+     52.40373831775701
+    ],
+    "obj_offset": [
+     0.9644859813084112,
+     0.9644859813084112
+    ],
+    "obj": [
+     344.0,
+     50.15327102803739
+    ]
+   },
+   "a4": {
+    "semi_px": 11803,
+    "near_white_semi": 1,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": null,
+   "file": "ws/plaque.webp",
+   "w": 1039,
+   "h": 158,
+   "bytes": 55132,
+   "sha256": "0cff7f202f6eeaa881238207545214f70ea220e3038e7562c73c7cc2409a631b"
+  },
+  "cup.webp": {
+   "src": "art/fx-src/tech-show/fx14-lamp-cup.png",
+   "crop": [
+    150,
+    437,
+    1105,
+    873
+   ],
+   "obj_in_crop": [
+    7,
+    6,
+    948,
+    427
+   ],
+   "k_css_per_src": 0.01753453772582359,
+   "scale": [
+    0.05549738219895288,
+    0.05504587155963303
+   ],
+   "use": "銅盞 16.5×7.382",
+   "resample": "BOX",
+   "webp_lossless": true,
+   "matte": {
+    "fn": "cut_white（prep.py）",
+    "thr": 245,
+    "shadow": true,
+    "sigma": 1.0,
+    "erode": 1,
+    "warm": false,
+    "pad": 4
+   },
+   "display_css": {
+    "full": [
+     16.74548352816153,
+     7.6450584484590856
+    ],
+    "obj_offset": [
+     0.12274176408076515,
+     0.10520722635494155
+    ],
+    "obj": [
+     16.5,
+     7.3820403825717325
+    ]
+   },
+   "a4": {
+    "semi_px": 169,
+    "near_white_semi": 0,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "a4_max_near_white_semi": 0,
+   "file": "ws/cup.webp",
+   "w": 53,
+   "h": 24,
+   "bytes": 2362,
+   "sha256": "75be0a19a86c98b8a6f79ad0ed559ae6c576af6dc98ce7c5afd43f5b54a7cade"
+  },
+  "flame-s0.webp": {
+   "src": "art/fx-src/tech-show/fx12-flame-blue.png",
+   "crop": [
+    0,
+    0,
+    1024,
+    1536
+   ],
+   "k_css_per_src": 0.021484375,
+   "scale": [
+    0.064453125,
+    0.064453125
+   ],
+   "use": "鬼火 19×28.5（可發動時 22×33），mix-blend-mode: screen",
+   "matte": null,
+   "display_css": {
+    "full": [
+     22.0,
+     33.0
+    ]
+   },
+   "file": "ws/flame-s0.webp",
+   "w": 66,
+   "h": 99,
+   "bytes": 2120,
+   "sha256": "9c5928248a02299269bf6f720665e7dbb9d89bb62788b5afc1e651d30ba5dcf9"
+  },
+  "flame-s1.webp": {
+   "src": "art/fx-src/tech-show/fx13-flame-red.png",
+   "crop": [
+    0,
+    0,
+    1024,
+    1536
+   ],
+   "k_css_per_src": 0.021484375,
+   "scale": [
+    0.064453125,
+    0.064453125
+   ],
+   "use": "鬼火 19×28.5（可發動時 22×33），mix-blend-mode: screen",
+   "matte": null,
+   "display_css": {
+    "full": [
+     22.0,
+     33.0
+    ]
+   },
+   "file": "ws/flame-s1.webp",
+   "w": 66,
+   "h": 99,
+   "bytes": 1994,
+   "sha256": "25b69e3de758ef3510e015d234fa50bced7038294be3d1847ae2a301bba145a7"
+  },
+  "seal-s1-kiri.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    36,
+    55,
+    382,
+    416
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    342,
+    357
+   ],
+   "k_css_per_src": 0.20710059171597633,
+   "scale": [
+    0.6213872832369942,
+    0.6232686980609419
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.65680473372781,
+     74.76331360946746
+    ],
+    "obj_offset": [
+     0.8284023668639053,
+     0.8284023668639053
+    ],
+    "obj": [
+     70.0,
+     73.10650887573965
+    ]
+   },
+   "a4": {
+    "semi_px": 2698,
+    "near_white_semi": 84,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s1-kiri.webp",
+   "w": 215,
+   "h": 225,
+   "bytes": 22010,
+   "sha256": "864b46e62603369f09eff10e52a6c5c5d08b723777ce4735fce1abe5c8bfd16a"
+  },
+  "seal-s1-sumo.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    409,
+    55,
+    754,
+    416
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    341,
+    357
+   ],
+   "k_css_per_src": 0.20771513353115728,
+   "scale": [
+    0.6231884057971014,
+    0.6232686980609419
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.66172106824926,
+     74.98516320474778
+    ],
+    "obj_offset": [
+     0.8308605341246291,
+     0.8308605341246291
+    ],
+    "obj": [
+     70.0,
+     73.32344213649851
+    ]
+   },
+   "a4": {
+    "semi_px": 2565,
+    "near_white_semi": 139,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s1-sumo.webp",
+   "w": 215,
+   "h": 225,
+   "bytes": 22260,
+   "sha256": "6f538ffed28cab91b86b1c38d1849d33d842ca52bda26a4b3aef84ac9e1382e5"
+  },
+  "seal-s1-ya.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    782,
+    55,
+    1127,
+    416
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    341,
+    357
+   ],
+   "k_css_per_src": 0.20771513353115728,
+   "scale": [
+    0.6231884057971014,
+    0.6232686980609419
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.66172106824926,
+     74.98516320474778
+    ],
+    "obj_offset": [
+     0.8308605341246291,
+     0.8308605341246291
+    ],
+    "obj": [
+     70.0,
+     73.32344213649851
+    ]
+   },
+   "a4": {
+    "semi_px": 2609,
+    "near_white_semi": 152,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s1-ya.webp",
+   "w": 215,
+   "h": 225,
+   "bytes": 21516,
+   "sha256": "8d901db543367ee84144f6f15af34e2dadca6afb0a117f2d297e4ee836eec175"
+  },
+  "seal-s1-take.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    1155,
+    55,
+    1500,
+    416
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    341,
+    357
+   ],
+   "k_css_per_src": 0.20771513353115728,
+   "scale": [
+    0.6231884057971014,
+    0.6232686980609419
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.66172106824926,
+     74.98516320474778
+    ],
+    "obj_offset": [
+     0.8308605341246291,
+     0.8308605341246291
+    ],
+    "obj": [
+     70.0,
+     73.32344213649851
+    ]
+   },
+   "a4": {
+    "semi_px": 2681,
+    "near_white_semi": 149,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s1-take.webp",
+   "w": 215,
+   "h": 225,
+   "bytes": 22360,
+   "sha256": "2b061979915bf3f8bcbaef344a975ba17efac768cdbf6d905990ea4974b6d933"
+  },
+  "seal-s0-kiri.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    36,
+    527,
+    381,
+    890
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    342,
+    359
+   ],
+   "k_css_per_src": 0.20710059171597633,
+   "scale": [
+    0.6231884057971014,
+    0.6225895316804407
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.44970414201184,
+     75.17751479289942
+    ],
+    "obj_offset": [
+     0.8284023668639053,
+     0.8284023668639053
+    ],
+    "obj": [
+     70.0,
+     73.5207100591716
+    ]
+   },
+   "a4": {
+    "semi_px": 2603,
+    "near_white_semi": 907,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s0-kiri.webp",
+   "w": 215,
+   "h": 226,
+   "bytes": 25056,
+   "sha256": "f515ae491c229fc64375b65806978055acd3c72674e80c834692b16227779a23"
+  },
+  "seal-s0-sumo.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    409,
+    527,
+    754,
+    890
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    341,
+    359
+   ],
+   "k_css_per_src": 0.20771513353115728,
+   "scale": [
+    0.6231884057971014,
+    0.6253443526170799
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.66172106824926,
+     75.4005934718101
+    ],
+    "obj_offset": [
+     0.8308605341246291,
+     0.8308605341246291
+    ],
+    "obj": [
+     70.0,
+     73.73887240356083
+    ]
+   },
+   "a4": {
+    "semi_px": 2631,
+    "near_white_semi": 1024,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s0-sumo.webp",
+   "w": 215,
+   "h": 227,
+   "bytes": 25452,
+   "sha256": "947683b2800910aa3807e3a08ab3b4de08d2b0f1cd8d1a062d5372faa7000936"
+  },
+  "seal-s0-ya.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    782,
+    527,
+    1126,
+    890
+   ],
+   "obj_in_crop": [
+    4,
+    4,
+    341,
+    359
+   ],
+   "k_css_per_src": 0.20771513353115728,
+   "scale": [
+    0.625,
+    0.6253443526170799
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.45400593471811,
+     75.4005934718101
+    ],
+    "obj_offset": [
+     0.8308605341246291,
+     0.8308605341246291
+    ],
+    "obj": [
+     70.0,
+     73.73887240356083
+    ]
+   },
+   "a4": {
+    "semi_px": 2668,
+    "near_white_semi": 716,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s0-ya.webp",
+   "w": 215,
+   "h": 227,
+   "bytes": 23912,
+   "sha256": "65c1865e74cb5beadb57504652443451879dd5d95eaed90be93456373278755f"
+  },
+  "seal-s0-take.webp": {
+   "src": "art/concept/tech-show/seals-1.png",
+   "crop": [
+    1156,
+    527,
+    1499,
+    890
+   ],
+   "obj_in_crop": [
+    3,
+    4,
+    339,
+    359
+   ],
+   "k_css_per_src": 0.20833333333333334,
+   "scale": [
+    0.6268221574344023,
+    0.6253443526170799
+   ],
+   "use": "招式卡大印 70 寬（data-skin=\"cardseal\"）；名牌大印 30 寬",
+   "matte": {
+    "fn": "matte（prep.py 主將印段）",
+    "dist": 48,
+    "sigma": 1.0,
+    "erode": 1,
+    "pad": 3
+   },
+   "display_css": {
+    "full": [
+     71.45833333333334,
+     75.625
+    ],
+    "obj_offset": [
+     0.625,
+     0.8333333333333334
+    ],
+    "obj": [
+     70.0,
+     73.95833333333334
+    ]
+   },
+   "a4": {
+    "semi_px": 2738,
+    "near_white_semi": 850,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/seal-s0-take.webp",
+   "w": 215,
+   "h": 227,
+   "bytes": 25174,
+   "sha256": "d56b26a013ea4556833c6521e14e6ce0993b33ed2d2555d9263a7fa6fa8f6385"
+  },
+  "frame-t.webp": {
+   "src": "art/fx-src/whole-screen/sc13-frame-edge.png",
+   "crop": [
+    382,
+    289,
+    820,
+    427
+   ],
+   "tile_unit_src": 438,
+   "tile_unit_css": 73,
+   "band_css": 23,
+   "scale": [
+    0.5,
+    0.5
+   ],
+   "rot90_ccw": 0,
+   "use": "漆框邊（background-repeat: repeat）",
+   "seam": {
+    "last_vs_first": 3.8,
+    "adj_median": 9.67,
+    "adj_p95": 18.64
+   },
+   "matte": null,
+   "file": "ws/frame-t.webp",
+   "w": 219,
+   "h": 69,
+   "bytes": 6888,
+   "sha256": "fa75762f652e05eb1228c3dbefc0e8273dd7baf851ad85fafafd7e276c5574bb"
+  },
+  "frame-r.webp": {
+   "src": "art/fx-src/whole-screen/sc13-frame-edge.png",
+   "crop": [
+    382,
+    289,
+    820,
+    427
+   ],
+   "tile_unit_src": 438,
+   "tile_unit_css": 73,
+   "band_css": 23,
+   "scale": [
+    0.5,
+    0.5
+   ],
+   "rot90_ccw": 3,
+   "use": "漆框邊（background-repeat: repeat）",
+   "seam": {
+    "last_vs_first": 3.8,
+    "adj_median": 9.67,
+    "adj_p95": 18.64
+   },
+   "matte": null,
+   "file": "ws/frame-r.webp",
+   "w": 69,
+   "h": 219,
+   "bytes": 7044,
+   "sha256": "3540a1928904c63b5c4ceb34782856da1bfb7a66c0348ae42b831d0a22666fd6"
+  },
+  "frame-b.webp": {
+   "src": "art/fx-src/whole-screen/sc13-frame-edge.png",
+   "crop": [
+    382,
+    289,
+    820,
+    427
+   ],
+   "tile_unit_src": 438,
+   "tile_unit_css": 73,
+   "band_css": 23,
+   "scale": [
+    0.5,
+    0.5
+   ],
+   "rot90_ccw": 2,
+   "use": "漆框邊（background-repeat: repeat）",
+   "seam": {
+    "last_vs_first": 3.8,
+    "adj_median": 9.67,
+    "adj_p95": 18.64
+   },
+   "matte": null,
+   "file": "ws/frame-b.webp",
+   "w": 219,
+   "h": 69,
+   "bytes": 6866,
+   "sha256": "f2468737cab764012f80c81b995d5df3d6ce636bff61ae2ca933afcd2c0dd217"
+  },
+  "frame-l.webp": {
+   "src": "art/fx-src/whole-screen/sc13-frame-edge.png",
+   "crop": [
+    382,
+    289,
+    820,
+    427
+   ],
+   "tile_unit_src": 438,
+   "tile_unit_css": 73,
+   "band_css": 23,
+   "scale": [
+    0.5,
+    0.5
+   ],
+   "rot90_ccw": 1,
+   "use": "漆框邊（background-repeat: repeat）",
+   "seam": {
+    "last_vs_first": 3.8,
+    "adj_median": 9.67,
+    "adj_p95": 18.64
+   },
+   "matte": null,
+   "file": "ws/frame-l.webp",
+   "w": 69,
+   "h": 219,
+   "bytes": 6868,
+   "sha256": "972bf086ac9d1c019ed5b4b02e65131458af292a51393a7fcfcb36316b83089d"
+  },
+  "corner-tl.webp": {
+   "src": "art/fx-src/whole-screen/sc12-frame-corner.png",
+   "crop": [
+    106.2,
+    106.2,
+    254.3623188405797,
+    254.3623188405797
+   ],
+   "scale": [
+    0.7019328585961343,
+    0.7019328585961343
+   ],
+   "rot90_ccw": 0,
+   "use": "漆框四角金具 104×104 device（34.667 CSS）",
+   "matte": {
+    "fn": "frame.py 框角金具（亮度＋開運算＋最大塊＋補洞）"
+   },
+   "a4": {
+    "semi_px": 1102,
+    "near_white_semi": 10,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/corner-tl.webp",
+   "w": 104,
+   "h": 104,
+   "bytes": 6210,
+   "sha256": "1cd05af8bb52aa86ca7ccae95921ba6f1d6c2666faf02288ccc64af9f5bbaea4"
+  },
+  "corner-tr.webp": {
+   "src": "art/fx-src/whole-screen/sc12-frame-corner.png",
+   "crop": [
+    106.2,
+    106.2,
+    254.3623188405797,
+    254.3623188405797
+   ],
+   "scale": [
+    0.7019328585961343,
+    0.7019328585961343
+   ],
+   "rot90_ccw": 3,
+   "use": "漆框四角金具 104×104 device（34.667 CSS）",
+   "matte": {
+    "fn": "frame.py 框角金具（亮度＋開運算＋最大塊＋補洞）"
+   },
+   "a4": {
+    "semi_px": 1102,
+    "near_white_semi": 9,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/corner-tr.webp",
+   "w": 104,
+   "h": 104,
+   "bytes": 6218,
+   "sha256": "a25f2ed760c82dd9e98f3e3515e8d2e131b0f19c963899334008f708e7276bed"
+  },
+  "corner-br.webp": {
+   "src": "art/fx-src/whole-screen/sc12-frame-corner.png",
+   "crop": [
+    106.2,
+    106.2,
+    254.3623188405797,
+    254.3623188405797
+   ],
+   "scale": [
+    0.7019328585961343,
+    0.7019328585961343
+   ],
+   "rot90_ccw": 2,
+   "use": "漆框四角金具 104×104 device（34.667 CSS）",
+   "matte": {
+    "fn": "frame.py 框角金具（亮度＋開運算＋最大塊＋補洞）"
+   },
+   "a4": {
+    "semi_px": 1102,
+    "near_white_semi": 9,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/corner-br.webp",
+   "w": 104,
+   "h": 104,
+   "bytes": 6350,
+   "sha256": "f9c1508a34202af8c8b039340ec1cc82a0c903e636f8b07e222a1bf0d32a5536"
+  },
+  "corner-bl.webp": {
+   "src": "art/fx-src/whole-screen/sc12-frame-corner.png",
+   "crop": [
+    106.2,
+    106.2,
+    254.3623188405797,
+    254.3623188405797
+   ],
+   "scale": [
+    0.7019328585961343,
+    0.7019328585961343
+   ],
+   "rot90_ccw": 1,
+   "use": "漆框四角金具 104×104 device（34.667 CSS）",
+   "matte": {
+    "fn": "frame.py 框角金具（亮度＋開運算＋最大塊＋補洞）"
+   },
+   "a4": {
+    "semi_px": 1102,
+    "near_white_semi": 8,
+    "near_white_opaque_edge": 0,
+    "components": 1
+   },
+   "file": "ws/corner-bl.webp",
+   "w": 104,
+   "h": 104,
+   "bytes": 6194,
+   "sha256": "61d7c318c9cfffb77956b9896a7bdb115b937e725520ddc045af320bc0bcdb0e"
+  },
+  "bg-1290.webp": {
+   "src": [
+    "art/fx-src/whole-screen/bg-top.png",
+    "art/fx-src/whole-screen/bg-mid.png",
+    "art/fx-src/whole-screen/sc16-bg-mid-variation.png",
+    "art/fx-src/whole-screen/bg-bottom.png"
+   ],
+   "src_sha256": {
+    "bg-top.png": "2128bafa5cdf128542d52a359e2581eaf9d1f22229bc2650bb2611963f6a5756",
+    "bg-mid.png": "f2efcf6f4682999871ad47799ed1b13aa136663271cf43bd5f2270a0fe2b6db7",
+    "sc16-bg-mid-variation.png": "83c7f1bf061f3a5fbcd82f749fac7f5cb19d9905c86c5db0159d6bb8e6901b73",
+    "bg-bottom.png": "a6be768ecb556197e348e121252b33ee7f18d5358129735b61b58331a7ea899a"
+   },
+   "scale": [
+    0.83984375,
+    0.83984375
+   ],
+   "tiles": [
+    {
+     "y0": 573,
+     "src": "sc16"
+    },
+    {
+     "y0": 1146,
+     "src": "bg-mid"
+    },
+    {
+     "y0": 1719,
+     "src": "sc16"
+    }
+   ],
+   "overlap": 287,
+   "top": [
+    595,
+    243
+   ],
+   "bottom_fade": 265,
+   "flipped": false,
+   "use": "對局背景 cover、靠上、水平置中",
+   "mirror": {
+    "max_corr": 0.6975,
+    "axis_y": 920.5,
+    "K": 130
+   },
+   "webp": {
+    "quality": 82,
+    "method": 6
+   },
+   "file": "ws/bg-1290.webp",
+   "w": 1290,
+   "h": 2796,
+   "bytes": 237668,
+   "sha256": "6407ea724a41f9abcfc68cb9f60e01e42621ccc32991815a6a40f9e50b5dba9b"
+  }
+ },
+ "home": {
+  "stitch_script": "proto/tools/ws/home_stitch.py",
+  "stitch_params": {
+   "HERE": "C:\\Users\\shung\\jieshi-ws\\proto\\tools\\ws",
+   "ROOT": "C:\\Users\\shung\\jieshi-ws",
+   "SRC": "C:\\Users\\shung\\jieshi-ws\\art\\fx-src\\home-night",
+   "W": 1290,
+   "H": 2796,
+   "SW": 1536,
+   "SH": 1024,
+   "SKY_X": 246,
+   "GATE_FILE": "home-2-gate-v2.png",
+   "GATE_X": 123,
+   "FOG_X": 123,
+   "DEEP_X": 123,
+   "BOX_BOTTOM_CSS": 235.78125,
+   "CLEAR_CSS": 4.0,
+   "NARROW_CSS_W": 390,
+   "CROW_TOP_SRC": 22,
+   "CROW_TOP_CANVAS": 794,
+   "GATE_Y": 772,
+   "MARGIN": 18,
+   "MIN_RAMP": 16,
+   "MIN_MARGIN": 4,
+   "ERODE_K": 24,
+   "SMOOTH_SIG": 8.0,
+   "ROOF_TOP": [
+    [
+     0,
+     330
+    ],
+    [
+     15,
+     305
+    ],
+    [
+     25,
+     262
+    ],
+    [
+     45,
+     265
+    ],
+    [
+     75,
+     250
+    ],
+    [
+     100,
+     243
+    ],
+    [
+     125,
+     213
+    ],
+    [
+     140,
+     177
+    ],
+    [
+     150,
+     165
+    ],
+    [
+     165,
+     128
+    ],
+    [
+     175,
+     110
+    ],
+    [
+     190,
+     74
+    ],
+    [
+     198,
+     66
+    ],
+    [
+     208,
+     30
+    ],
+    [
+     215,
+     22
+    ],
+    [
+     235,
+     22
+    ],
+    [
+     255,
+     44
+    ],
+    [
+     270,
+     60
+    ],
+    [
+     280,
+     68
+    ],
+    [
+     300,
+     80
+    ],
+    [
+     345,
+     92
+    ],
+    [
+     375,
+     76
+    ],
+    [
+     395,
+     80
+    ],
+    [
+     420,
+     120
+    ],
+    [
+     445,
+     118
+    ],
+    [
+     485,
+     118
+    ],
+    [
+     500,
+     140
+    ],
+    [
+     565,
+     140
+    ],
+    [
+     595,
+     138
+    ],
+    [
+     628,
+     140
+    ],
+    [
+     660,
+     175
+    ],
+    [
+     700,
+     190
+    ],
+    [
+     800,
+     210
+    ],
+    [
+     900,
+     232
+    ],
+    [
+     1000,
+     254
+    ],
+    [
+     1030,
+     236
+    ],
+    [
+     1070,
+     236
+    ],
+    [
+     1100,
+     270
+    ],
+    [
+     1125,
+     271
+    ],
+    [
+     1175,
+     271
+    ],
+    [
+     1200,
+     300
+    ],
+    [
+     1260,
+     316
+    ],
+    [
+     1295,
+     305
+    ],
+    [
+     1345,
+     305
+    ],
+    [
+     1400,
+     338
+    ],
+    [
+     1460,
+     310
+    ],
+    [
+     1485,
+     298
+    ],
+    [
+     1500,
+     300
+    ],
+    [
+     1515,
+     335
+    ],
+    [
+     1536,
+     345
+    ]
+   ],
+   "FOG_ROW": 760,
+   "FOG_SRC0": 300,
+   "FOG_Y": 1532,
+   "GATE_FOG_OV": 264,
+   "DEEP_Y0": 2110,
+   "DEEP_SRC0": 338,
+   "SOURCES": [
+    "home-1-sky.png",
+    "home-2-gate-v2.png",
+    "home-3-fog.png",
+    "home-4-deep.png"
+   ]
+  },
+  "stitch_sources_sha256": {
+   "home-1-sky.png": "196d53d869ccb8edcde47096ed2b221c9bb1a9eddcccb660723d2854a138336e",
+   "home-2-gate-v2.png": "5d854884872ff44a8bde68a1cdb2926a3e861247ba24cc5b7744474144bdf309",
+   "home-3-fog.png": "89bd840595433a33a224021d86ded0c023dd8ecf6a49f8795b6007668d218a48",
+   "home-4-deep.png": "7bb4b7614806d12db6db43348598a8207c6f1a11fc08d743c732474b8eca33ff"
+  },
+  "stitched_png": "art/fx-src/home-night/home-stitched-v2-1290x2796.png",
+  "stitched_png_sha256": "143948b2ed038a42154474e91e75ed34a1b4704748c39abdfec4944bc8b8bae0",
+  "seams": [
+   {
+    "name": "sky→gate",
+    "band": [
+     772,
+     1024
+    ],
+    "seam_rowdiff_blended": 2.44,
+    "p95_outside": 8.29,
+    "pass": true
+   },
+   {
+    "name": "gate→fog",
+    "band": [
+     1532,
+     1796
+    ],
+    "seam_rowdiff_blended": 3.0,
+    "p95_outside": 8.29,
+    "pass": true
+   },
+   {
+    "name": "fog→deep",
+    "band": [
+     2110,
+     2256
+    ],
+    "seam_rowdiff_blended": 1.79,
+    "p95_outside": 8.29,
+    "pass": true
+   }
+  ],
+  "mirror": {
+   "max_corr": 0.7752,
+   "axis_y": 163.5,
+   "K": 130,
+   "pass_le_0_8": true
+  },
+  "webp": {
+   "quality": 82,
+   "method": 6,
+   "resample": "LANCZOS"
+  },
+  "files": [
+   {
+    "file": "proto/public/home/rashomon-night-430.webp",
+    "w": 430,
+    "h": 932,
+    "bytes": 41558,
+    "sha256": "3f48fdbc388d64447c1646edd487c46235417dd2a7e3348111070fd5c8482002"
+   },
+   {
+    "file": "proto/public/home/rashomon-night-860.webp",
+    "w": 860,
+    "h": 1864,
+    "bytes": 147972,
+    "sha256": "3b0b56b07d5c20d8fb4cc5c895b97fb8aab37ecc55059ca44babde8a51ee0985"
+   },
+   {
+    "file": "proto/public/home/rashomon-night-1290.webp",
+    "w": 1290,
+    "h": 2796,
+    "bytes": 284372,
+    "sha256": "18673a63985133919a8bd3a079cbcae5ce49f127ce09b6c99475ece7b5b641bb"
+   }
+  ]
+ },
+ "total_ws_bytes": 721578
+}
